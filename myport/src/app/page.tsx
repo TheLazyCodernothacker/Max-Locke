@@ -24,13 +24,13 @@ export default function Home() {
               href="https://github.com/TheLazyCodernothacker"
               target="_blank"
             >
-              <h2 className="text-neutral-500 text-xl">
+              <h2 className="text-neutral-500 text-xl ">
                 @TheLazyCodernothacker
               </h2>
             </Link>
-            <p className="text-2xl mt-4">Fullstack Developer</p>
-            <p className="text-2xl mt-1">13 years old</p>
-            <p className="text-2xl mt-1">Bellevue, WA</p>
+            <p className="text-2xl mt-4">
+              13 year old full-stack developer from Bellevue, WA
+            </p>
           </div>
           <div className="mt-4 flex flex-wrap items-center">
             <Link
@@ -59,13 +59,31 @@ export default function Home() {
           </div>
         </div>
         <div className="sm:w-3/4  p-4 md:p-6 sm:inline-block box-border">
-          <h2 className="text-4xl font-bold">About Me</h2>
+          <h2 className="text-5xl font-bold mt-4 text-sky-900">About Me</h2>
           <p className="text-xl mt-4">
             Hello, I'm Max Locke, the creator of Subatomic.js, a fullstack
             framework for building web apps. As a 13-year-old fullstack
-            developer from Bellevue, WA, I am passionate about learning and
-            expanding my skill set. My expertise includes HTML, CSS, JS, React,
-            Next.js, Node.js, Express.js, MongoDB, Python, and more.
+            developer from Bellevue, WA. I enjoy programming, especially web
+            development, along with music theory/composition. I'm passionate
+            about learning and am always looking to expand my skill-set.
+          </p>
+
+          <div className="flex flex-col items-center content-center px-4 md:px-6 lg:px-8 py-10 lg:py-12">
+            <blockquote
+              className="text-2xl md:text-3xl quote relative"
+              style={{
+                "font-family": "Georgia, serif",
+                "font-style": "italic",
+              }}
+            >
+              If you think you're done learning how to code, you're doing
+              something wrong.
+            </blockquote>
+            <cite className="w-full mt-4 text-xl">- Max Locke</cite>
+          </div>
+          <h1 className="text-5xl font-bold mt-0 text-sky-900">Skills</h1>
+          <p className="text-xl mt-4">
+            I'm skilled in many areas of web development, including:
           </p>
           <div className="flex flex-row gap-4 py-8 overflow-x-auto whitespace-nowrap h-40 py-4">
             <Logo
@@ -112,12 +130,19 @@ export default function Home() {
               src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Socket-io.svg/2048px-Socket-io.svg.png"
               alt="Socket.io Logo"
             />
+            <Logo
+              src="https://cdn.icon-icons.com/icons2/2699/PNG/512/tailwindcss_logo_icon_167923.png"
+              alt="Tailwind CSS Logo"
+            />
           </div>
-          <h1 className="text-4xl font-bold mt-4">Projects</h1>
+          <h2 className="text-5xl font-bold mt-8 text-sky-900">Projects</h2>
           <p className="text-xl mt-4">
             I've worked on various projects, and here are some of my favorites:
           </p>
-          <h3 className="text-3xl font-bold mt-4">Subatomic.js</h3>
+          <h3 className="text-3xl font-semibold mt-4">
+            Subatomic.js,{" "}
+            <span className=" text-2xl font-normal italic">JS Framework</span>
+          </h3>
           <p className="text-xl mt-4">
             Subatomic.js began as an abstract idea for a fullstack SSR
             framework. Initially, I developed a frontend-only version using
@@ -137,7 +162,12 @@ export default function Home() {
             framework with SSR, JSX, and PSR.
           </p>
 
-          <h3 className="text-3xl font-bold mt-4">Coducation</h3>
+          <h3 className="text-3xl font-semibold mt-4">
+            Coducation,{" "}
+            <span className=" text-2xl font-normal italic">
+              Learning Platform
+            </span>
+          </h3>
           <p className="text-xl mt-4">
             Coducation is a collaborative website that I created with{" "}
             <a
@@ -152,7 +182,7 @@ export default function Home() {
             with MongoDB, but we later migrated to using React and used the MERN
             tech stack. I found it very interesting to make a huge investment
             into changing the architecture of the project, and I learned a lot
-            about React and the MERN stack. I also realized that userauth is
+            about React and the MERN stack. I also realized that user-auth is
             hard and that SSR was probably the next step to get better
             performance and SEO. You can visit the site at{" "}
             <a
@@ -164,7 +194,12 @@ export default function Home() {
             </a>
             .
           </p>
-          <h3 className="text-3xl font-bold mt-4">Tyee Guides</h3>
+          <h3 className="text-3xl font-semibold mt-4">
+            Tyee Guides,{" "}
+            <span className=" text-2xl font-normal italic">
+              Community Portal
+            </span>
+          </h3>
           <p className="text-xl mt-4">
             Tyee Guides is a website that I created with{" "}
             <a
@@ -189,7 +224,9 @@ export default function Home() {
             </a>
             .
           </p>
-          <h1 className="text-4xl font-bold mt-4">Competitive Programming</h1>
+          <h3 className="text-3xl font-semibold mt-4">
+            Competitive Programming
+          </h3>
           <p className="text-xl mt-4">
             I just recently started competitive programming, and I'm currently
             ranked third in the Tyee Programming Competition Club. I've competed
@@ -197,9 +234,9 @@ export default function Home() {
             well on the theory end. I was able to solve the coding problems
             well, which is what got me ranked third of the club. I'm currently
             studying more about low-level programming and algorithms outside of
-            my webdev experience.
+            my web-dev experience.
           </p>
-          <h1 className="text-4xl font-bold mt-4">Interests</h1>
+          <h2 className="text-5xl font-bold mt-8 text-sky-900">Interests</h2>
           <p className="text-xl mt-4">
             I'm interested in many things, including:
           </p>
@@ -211,11 +248,11 @@ export default function Home() {
             <li>Music theory/composition</li>
             <li>NFL #gohawks</li>
           </ul>
-          <h1 className="text-4xl font-bold mt-4">Contact</h1>
+          <h2 className="text-5xl font-bold mt-8 text-sky-900">Contact</h2>
           <p className="text-xl mt-4">
             You can contact me at{" "}
             <a
-              href="mailto:lockemaximus@gmail.comm
+              href="mailto:lockemaximus@gmail.com
               "
               className="text-blue-600 hover:text-blue-700 visited:text-purple-600"
             >
@@ -225,6 +262,9 @@ export default function Home() {
           </p>
         </div>
       </main>
+      <footer className="text-center p-4 md:p-6 lg:p-8 bg-sky-900 text-white text-xl">
+        &copy; 2023 Max Locke.
+      </footer>
     </>
   );
 }
