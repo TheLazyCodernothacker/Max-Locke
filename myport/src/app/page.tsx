@@ -262,7 +262,7 @@ export default function Home() {
           </p>
         </div>
       </main>
-      <footer className="text-center p-4 md:p-6 lg:p-8 bg-sky-900 text-white text-xl">
+      <footer className="text-center p-4 md:p-6 lg:p-8 bg-sky-900 text-white text-sm">
         &copy; 2024 Max Locke | All Rights Reserved
       </footer>
     </>
