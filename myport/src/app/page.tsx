@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import image from "./IMG_1520 (2) (1).jpg";
 
 export default function Home() {
   return (
@@ -13,7 +14,7 @@ export default function Home() {
         <div className="sidenav p-4 md:p-6 sm:w-1/4 box-border sm:inline-block sm:align-top sm:sticky sm:top-1 -mt-0 sm:-m-2 md:-mt-4 lg:-mt-6 xl:-mt-8 pt-4 sm:pt-4 md:pt-8 lg:pt-12 xl:pt-16 overflow-y-auto">
           <Image
             className="rounded-full max-w-72 w-full"
-            src="https://avatars.githubusercontent.com/u/120674735?s=400&u=4397fab867b11ca0beb9f87bf03cac059fee2545&v=4"
+            src={image}
             alt="Picture of the author"
             width={200}
             height={200}
