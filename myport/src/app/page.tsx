@@ -61,11 +61,12 @@ export default function Home() {
         <div className="sm:w-3/4  p-4 md:p-6 sm:inline-block box-border">
           <h2 className="text-5xl font-bold mt-4 text-sky-900">About Me</h2>
           <p className="text-xl mt-4">
-            Hello, I'm Max Locke, the creator of Subatomic.js, a fullstack
+            Hello, I&apos;m Max Locke, the creator of Subatomic.js, a fullstack
             framework for building web apps. As a 13-year-old fullstack
             developer from Bellevue, WA. I enjoy programming, especially web
-            development, along with music theory/composition. I'm passionate
-            about learning and am always looking to expand my skill-set.
+            development, along with music theory/composition. I&apos;m
+            passionate about learning and am always looking to expand my
+            skill-set.
           </p>
 
           <div className="flex flex-col items-center content-center px-4 md:px-6 lg:px-8 py-10 lg:py-12">
@@ -76,14 +77,14 @@ export default function Home() {
                 "font-style": "italic",
               }}
             >
-              If you think you're done learning how to code, you're doing
-              something wrong.
+              If you think you&apos;re done learning how to code, you&apos;re
+              doing something wrong.
             </blockquote>
             <cite className="w-full mt-4 text-xl">- Max Locke</cite>
           </div>
           <h1 className="text-5xl font-bold mt-0 text-sky-900">Skills</h1>
           <p className="text-xl mt-4">
-            I'm skilled in many areas of web development, including:
+            I&apos;m skilled in many areas of web development, including:
           </p>
           <div className="flex flex-row gap-4 py-8 overflow-x-auto whitespace-nowrap h-40 py-4">
             <Logo
@@ -137,7 +138,8 @@ export default function Home() {
           </div>
           <h2 className="text-5xl font-bold mt-8 text-sky-900">Projects</h2>
           <p className="text-xl mt-4">
-            I've worked on various projects, and here are some of my favorites:
+            I&apos;ve worked on various projects, and here are some of my
+            favorites:
           </p>
           <h3 className="text-3xl font-semibold mt-4">
             Subatomic.js,{" "}
@@ -209,12 +211,12 @@ export default function Home() {
             >
               William Liang
             </a>{" "}
-            in Next.js using Next Auth and MongoDB. It is a website that's meant
-            to help middle schoolers at Tyee and improve their middle school
-            experience. You can login with Github currently and have access to a
-            global calendar where you can view and post dates, you can rate
-            classes on certain criteria, and other features we never finished
-            such as a newspaper. You can visit the site at{" "}
+            in Next.js using Next Auth and MongoDB. It is a website that&apos;s
+            meant to help middle schoolers at Tyee and improve their middle
+            school experience. You can login with Github currently and have
+            access to a global calendar where you can view and post dates, you
+            can rate classes on certain criteria, and other features we never
+            finished such as a newspaper. You can visit the site at{" "}
             <a
               href="https://guides.tyeems.me"
               className="text-blue-600 hover:text-blue-700 visited:text-purple-600"
@@ -228,17 +230,17 @@ export default function Home() {
             Competitive Programming
           </h3>
           <p className="text-xl mt-4">
-            I just recently started competitive programming, and I'm currently
-            ranked third in the Tyee Programming Competition Club. I've competed
-            in the ACSL (American Computer Science League) but didn't do too
-            well on the theory end. I was able to solve the coding problems
-            well, which is what got me ranked third of the club. I'm currently
-            studying more about low-level programming and algorithms outside of
-            my web-dev experience.
+            I just recently started competitive programming, and I&apos;m
+            currently ranked third in the Tyee Programming Competition Club.
+            I&apos;ve competed in the ACSL (American Computer Science League)
+            but didn&apos;t do too well on the theory end. I was able to solve
+            the coding problems well, which is what got me ranked third of the
+            club. I&apos;m currently studying more about low-level programming
+            and algorithms outside of my web-dev experience.
           </p>
           <h2 className="text-5xl font-bold mt-8 text-sky-900">Interests</h2>
           <p className="text-xl mt-4">
-            I'm interested in many things, including:
+            I&apos;m interested in many things, including:
           </p>
           <ul className="list-disc list-inside text-xl mt-4">
             <li>Web Development</li>
