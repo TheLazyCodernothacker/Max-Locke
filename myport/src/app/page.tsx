@@ -252,7 +252,6 @@ export default function Home() {
           </ul>
           <h2 className="text-5xl font-bold mt-8 text-sky-900">Contact</h2>
           <p className="text-xl mt-4">
-            You can contact me at{" "}
             <a
               href="mailto:lockemaximus@gmail.com
               "
@@ -260,12 +259,11 @@ export default function Home() {
             >
               lockemaximus@gmail.com
             </a>
-            .
           </p>
         </div>
       </main>
       <footer className="text-center p-4 md:p-6 lg:p-8 bg-sky-900 text-white text-xl">
-        &copy; 2023 Max Locke.
+        &copy; 2024 Max Locke | All Rights Reserved
       </footer>
     </>
   );
