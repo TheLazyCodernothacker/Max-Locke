@@ -1,11 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
-import image from "./IMG_1520 (2) (1).jpg";
+import image from "./test.png";
+import GHLogo from "./25231.png";
 
 export default function Home() {
   return (
     <>
-      <nav className="flex items-center bg-sky-950 p-2 sm:p-4 md:p-4 lg:p-4 xl:p-6">
+      <nav className="flex items-center bg-gray-900 p-2 sm:p-4 md:p-4 lg:p-4 xl:p-6">
         <div className="flex items-center flex-shrink-0 mr-6 text-white">
           <span className="font-semibold text-xl tracking-tight">About Me</span>
         </div>
@@ -13,7 +14,7 @@ export default function Home() {
       <main className="sm:p-2 md:p-4 lg:p-6 xl:p-8 py-0">
         <div className="sidenav p-4 md:p-6 sm:w-1/4 box-border sm:inline-block sm:align-top sm:sticky sm:top-1 -mt-0 sm:-m-2 md:-mt-4 lg:-mt-6 xl:-mt-8 pt-4 sm:pt-4 md:pt-8 lg:pt-12 xl:pt-16 overflow-y-auto">
           <Image
-            className="rounded-full max-w-72 w-full"
+            className="rounded-full max-w-72 w-full light:hidden"
             src={image}
             alt="Picture of the author"
             width={200}
@@ -30,7 +31,7 @@ export default function Home() {
               </h2>
             </Link>
             <p className="text-2xl mt-4">
-              13 year old full-stack developer from Bellevue, WA
+              14 year old full-stack developer from Bellevue, WA
             </p>
           </div>
           <div className="mt-4 flex flex-wrap items-center">
@@ -46,6 +47,12 @@ export default function Home() {
               />
             </Link>
             <Link
+              href="https://github.com/TheLazyCodernothacker"
+              target="_blank"
+            >
+              <Image src={GHLogo} alt="GitHub Logo" width={50} height={50} />
+            </Link>
+            <Link
               href="https://www.npmjs.com/~thelazycodernothacker"
               target="_blank"
               className="ml-4"
@@ -57,24 +64,42 @@ export default function Home() {
                 height={50}
               />
             </Link>
+            <Link
+              href="https://youtube.com/@CodeSymph"
+              target="_blank"
+              className="ml-4"
+            >
+              <Image
+                src="https://static.vecteezy.com/system/resources/previews/023/986/704/non_2x/youtube-logo-youtube-logo-transparent-youtube-icon-transparent-free-free-png.png"
+                alt="NPM Logo"
+                width={50}
+                height={50}
+              />
+            </Link>
           </div>
         </div>
         <div className="sm:w-3/4  p-4 md:p-6 sm:inline-block box-border">
-          <h2 className="text-5xl font-bold mt-4 text-sky-900">About Me</h2>
+          <h2 className="text-5xl font-bold mt-4 text-gray-600">About Me</h2>
           <p className="text-xl mt-4">
             Hello, I&apos;m Max Locke, the creator of Subatomic.js, a fullstack
-            framework for building web apps. As a 13-year-old fullstack
-            developer from Bellevue, WA. I enjoy programming, especially web
-            development, along with music theory/composition. I&apos;m
-            passionate about learning and am always looking to expand my
-            skill-set.
+            framework for building web apps. As a 14-year-old fullstack
+            developer and{" "}
+            <Link
+              href="https://youtube.com/@CodeSymph"
+              target="_blank"
+              className="text-gray-600 font-bold"
+            >
+              YouTuber
+            </Link>{" "}
+            from Bellevue, WA. I enjoy programming, especially web development,
+            along with music theory/composition. I&apos;m passionate about
+            learning and am always looking to expand my skill-set.
           </p>
 
           <div className="flex flex-col items-center content-center px-4 md:px-6 lg:px-8 py-10 lg:py-12">
             <blockquote
               className="text-2xl md:text-3xl quote relative"
               style={{
-                "font-family": "Georgia, serif",
                 "font-style": "italic",
               }}
             >
@@ -83,9 +108,10 @@ export default function Home() {
             </blockquote>
             <cite className="w-full mt-4 text-xl">- Max Locke</cite>
           </div>
-          <h1 className="text-5xl font-bold mt-0 text-sky-900">Skills</h1>
+          <h1 className="text-5xl font-bold mt-0 text-gray-600">Skills</h1>
           <p className="text-xl mt-4">
-            I&apos;m skilled in many areas of web development, including:
+            I&apos;m skilled in many areas of web development and programming,
+            including:
           </p>
           <div className="flex flex-row gap-4 py-8 overflow-x-auto whitespace-nowrap h-40 py-4">
             <Logo
@@ -109,7 +135,7 @@ export default function Home() {
               alt="Node.js Logo"
             />
             <Logo
-              src="https://s-softteam.com/wp-content/uploads/2023/07/pngwing.com-6.png"
+              src="https://cdn.buttercms.com/8am8PZECScDawQa33Lv2"
               alt="Express.js Logo"
             />
             <Logo
@@ -136,13 +162,21 @@ export default function Home() {
               src="https://cdn.icon-icons.com/icons2/2699/PNG/512/tailwindcss_logo_icon_167923.png"
               alt="Tailwind CSS Logo"
             />
+            <Logo
+              src="https://www.shareicon.net/data/512x512/2016/09/23/833700_windows_512x512.png"
+              alt="Java Logo"
+            />
+            <Logo
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/800px-ISO_C%2B%2B_Logo.svg.png"
+              alt="C++ Logo"
+            />
           </div>
-          <h2 className="text-5xl font-bold mt-8 text-sky-900">Projects</h2>
-          <p className="text-xl mt-4">
+          <h2 className="text-5xl font-bold mt-8 text-gray-600">Projects</h2>
+          <p className="text-xl mt-4 mb-8">
             I&apos;ve worked on various projects, and here are some of my
             favorites:
           </p>
-          <h3 className="text-3xl font-semibold mt-4">
+          <h3 className="text-3xl  mt-4">
             Subatomic.js,{" "}
             <span className=" text-2xl font-normal italic">JS Framework</span>
           </h3>
@@ -156,16 +190,29 @@ export default function Home() {
             its evolution on{" "}
             <a
               href="https://github.com/TheLazyCodernothacker/Subatomic"
-              className="text-blue-600 hover:text-blue-700 visited:text-purple-600"
+              className="text-gray-600 hover:text-gray-700 visited:text-gray-400 font-bold"
             >
               GitHub
             </a>
             . I take pride in the transformation of this project, starting from
             a frontend concept and growing into a comprehensive fullstack
-            framework with SSR, JSX, and PSR.
+            framework with SSR, JSX, and PSR. You can view a demo and short
+            tutorial at{" "}
+            <Link
+              href="https://subatomic.js.org"
+              className="text-gray-600 hover:text-gray-700 visited:text-gray-400 font-bold"
+            >
+              subatomic.js.org
+            </Link>
+            .
           </p>
+          <iframe
+            src="https://subatomic.js.org"
+            className="w-full bg-white my-6 "
+            style={{ aspectRatio: "2/1" }}
+          ></iframe>
 
-          <h3 className="text-3xl font-semibold mt-4">
+          <h3 className="text-3xl  mt-4">
             Coducation,{" "}
             <span className=" text-2xl font-normal italic">
               Learning Platform
@@ -175,7 +222,7 @@ export default function Home() {
             Coducation is a collaborative website that I created with{" "}
             <a
               href="https://github.com/Pineappletwo1"
-              className="text-blue-600 hover:text-blue-700 visited:text-purple-600"
+              className="text-gray-600 hover:text-gray-700 visited:text-gray-400 font-bold"
               target="_blank"
             >
               William Liang
@@ -187,17 +234,28 @@ export default function Home() {
             into changing the architecture of the project, and I learned a lot
             about React and the MERN stack. I also realized that user-auth is
             hard and that SSR was probably the next step to get better
-            performance and SEO. You can visit the site at{" "}
+            performance and SEO. You can no longer visit the website at{" "}
             <a
               href="http://home.coducation.tech"
-              className="text-blue-600 hover:text-blue-700 visited:text-purple-600"
+              className="text-gray-600 hover:text-gray-700 visited:text-gray-400 font-bold"
               target="_blank"
             >
               home.coducation.tech
-            </a>
+            </a>{" "}
+            due to Heroku prices getting too expensive, but you can view the
+            code at{" "}
+            <Link
+              href="
+              https://github.com/TheLazyCodernothacker/Coducation"
+              className="text-gray-600 hover:text-gray-700 visited:text-gray-400 font-bold"
+              target="_blank"
+            >
+              github.com/TheLazyCodernothacker/Coducation
+            </Link>
             .
           </p>
-          <h3 className="text-3xl font-semibold mt-4">
+
+          <h3 className="text-3xl mt-4">
             Tyee Guides,{" "}
             <span className=" text-2xl font-normal italic">
               Community Portal
@@ -207,7 +265,7 @@ export default function Home() {
             Tyee Guides is a website that I created with{" "}
             <a
               href="https://github.com/Pineappletwo1"
-              className="text-blue-600 hover:text-blue-700 visited:text-purple-600"
+              className="text-gray-600 hover:text-gray-700 visited:text-gray-400 font-bold"
               target="_blank"
             >
               William Liang
@@ -220,13 +278,61 @@ export default function Home() {
             finished such as a newspaper. You can visit the site at{" "}
             <a
               href="https://guides.tyeems.me"
-              className="text-blue-600 hover:text-blue-700 visited:text-purple-600"
+              className="text-gray-600 hover:text-gray-700 visited:text-gray-400 font-bold"
               target="_blank"
             >
               guides.tyeems.me
             </a>
             .
           </p>
+          <iframe
+            src="https://guides.tyeems.me"
+            className="w-full bg-white my-6 "
+            style={{ aspectRatio: "2/1" }}
+          ></iframe>
+          <h3 className="text-3xl mt-4">
+            Tyee Calendar,{" "}
+            <span className=" text-2xl font-normal italic">
+              Community Calendar
+            </span>
+          </h3>
+          <p className="text-xl mt-4">
+            For the{" "}
+            <Link
+              href="https://tyee2024.devpost.com/participants"
+              target="_blank"
+              className="text-gray-600 hover:text-gray-700 visited:text-gray-400"
+            >
+              Middle School Hackathon
+            </Link>
+            , inspired by Tyee Guides, Tyee Calendar is a website that I created
+            with{" "}
+            <a
+              href="https://github.com/Pineappletwo1"
+              className="text-gray-600 hover:text-gray-700 visited:text-gray-400 font-bold"
+              target="_blank"
+            >
+              William Liang
+            </a>{" "}
+            in Next.js and the same technologies as Tyee Guides. The goal of the
+            website was to focus mainly on creating a calendar that students can
+            contribute to. Logged in users can create and comment on events, all
+            moderated by Google Gemini API to ensure safety. You can visit the
+            site at{" "}
+            <a
+              href="https://tyeecalendar.maxlocke.me"
+              className="text-gray-600 hover:text-gray-700 visited:text-gray-400 font-bold"
+              target="_blank"
+            >
+              tyeecalendar.maxlocke.me
+            </a>
+            .
+          </p>
+          <iframe
+            src="https://tyeecalendar.maxlocke.me"
+            className="w-full bg-white my-6 "
+            style={{ aspectRatio: "2/1" }}
+          ></iframe>
           <h3 className="text-3xl font-semibold mt-4">
             Competitive Programming
           </h3>
@@ -234,12 +340,50 @@ export default function Home() {
             I just recently started competitive programming, and I&apos;m
             currently ranked third in the Tyee Programming Competition Club.
             I&apos;ve competed in the ACSL (American Computer Science League)
-            but didn&apos;t do too well on the theory end. I was able to solve
-            the coding problems well, which is what got me ranked third of the
-            club. I&apos;m currently studying more about low-level programming
-            and algorithms outside of my web-dev experience.
+            While I only scored 20 points on the ACSL Junior 5 Finals, I look
+            forward to improving and studying more the next season.
           </p>
-          <h2 className="text-5xl font-bold mt-8 text-sky-900">Interests</h2>
+
+          <h2 className="text-5xl font-bold mt-4 text-gray-600">
+            YouTube Channel
+          </h2>
+          <p className="text-xl mt-4">
+            I am the creator, runner, filmer, editor, and everything else of the
+            YouTube channel{" "}
+            <Link
+              href="https://youtube.com/@CodeSymph"
+              className="text-gray-600 hover:text-gray-700 visited:text-gray-400 font-bold"
+            >
+              Code Symphony.
+            </Link>
+            The channel is about programming and music and I dive into the
+            potentials of AI in many videos in series. This includes my series
+            of{" "}
+            <Link
+              href="https://www.youtube.com/watch?v=PeuNDJYVX-0&list=PLKS-_pqzLOm3z9f18w696J2pLhn60A1Iq"
+              target="_blank"
+              className="text-gray-600 hover:text-gray-700 visited:text-gray-400 font-bold"
+            >
+              Learning Java from ChatGPT
+            </Link>{" "}
+            and{" "}
+            <Link
+              href="https://www.youtube.com/watch?v=v6k2vfOR208&list=PLKS-_pqzLOm2Q-WFO5sg6uG1xGQ5X11IE&index=1"
+              target="_blank"
+              className="text-gray-600 hover:text-gray-700 visited:text-gray-400 font-bold"
+            >
+              Learning C++ from ChatGPT
+            </Link>
+            .
+          </p>
+          <iframe
+            src="https://www.youtube.com/embed/434BJGn7lSk?si=-zE1lxc1ffxNiOtN"
+            title="YouTube video player"
+            style={{ aspectRatio: "2/1" }}
+            className="w-full bg-white my-6"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          ></iframe>
+          <h2 className="text-5xl font-bold mt-8 text-gray-600">Interests</h2>
           <p className="text-xl mt-4">
             I&apos;m interested in many things, including:
           </p>
@@ -251,19 +395,21 @@ export default function Home() {
             <li>Music theory/composition</li>
             <li>NFL #gohawks</li>
           </ul>
-          <h2 className="text-5xl font-bold mt-8 text-sky-900">Contact</h2>
+          <h2 className="text-5xl font-bold mt-8 text-gray-600">Contact</h2>
           <p className="text-xl mt-4">
+            Feel free to email me at{" "}
             <a
               href="mailto:lockemaximus@gmail.com
               "
-              className="text-blue-600 hover:text-blue-700 visited:text-purple-600"
+              className="text-gray-600 hover:text-gray-700 visited:text-gray-400 font-bold"
             >
               lockemaximus@gmail.com
-            </a>
+            </a>{" "}
+            and hopefully I will respond within 24 hours.
           </p>
         </div>
       </main>
-      <footer className="text-center p-4 md:p-6 lg:p-8 bg-sky-900 text-white text-sm">
+      <footer className="text-center p-4 md:p-6 lg:p-8 bg-gray-900 text-white text-sm">
         &copy; 2024 Max Locke | All Rights Reserved
       </footer>
     </>
