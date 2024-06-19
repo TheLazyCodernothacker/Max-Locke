@@ -38,6 +38,7 @@ export default function Home() {
             <Link
               href="https://github.com/TheLazyCodernothacker"
               target="_blank"
+              className="dark:hidden"
             >
               <Image
                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/2048px-Octicons-mark-github.svg.png"
@@ -49,6 +50,7 @@ export default function Home() {
             <Link
               href="https://github.com/TheLazyCodernothacker"
               target="_blank"
+              className="hidden dark:block"
             >
               <Image src={GHLogo} alt="GitHub Logo" width={50} height={50} />
             </Link>
