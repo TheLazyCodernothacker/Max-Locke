@@ -245,14 +245,14 @@ export default function Home() {
               home.coducation.tech
             </a>{" "}
             due to Heroku prices getting too expensive, but you can view the
-            code at{" "}
+            code{" "}
             <Link
               href="
               https://github.com/TheLazyCodernothacker/Coducation"
               className="text-gray-600 hover:text-gray-700 visited:text-gray-400 font-bold"
               target="_blank"
             >
-              github.com/TheLazyCodernothacker/Coducation
+              here
             </Link>
             .
           </p>
