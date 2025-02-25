@@ -2,11 +2,26 @@ import Image from "next/image";
 import Link from "next/link";
 import image from "./test.png";
 import GHLogo from "./25231.png";
+import CppLogo from "./assets/cpp_logo.webp";
+import JavaLogo from "./assets/java_logo.webp";
+import CssLogo from "./assets/css_logo.webp";
+import ExpressLogo from "./assets/express_logo.webp";
+import HtmlLogo from "./assets/html_logo.webp";
+import JsLogo from "./assets/js_logo.webp";
+import NextDarkLogo from "./assets/next_dark_logo.webp";
+import NextLightLogo from "./assets/next_light_logo.png";
+import NodeLogo from "./assets/node_logo.png";
+import PythonLogo from "./assets/python_logo.webp";
+import ReactLogo from "./assets/react_logo.webp";
+import TailwindLogo from "./assets/tailwind_logo.png";
+import TypeScriptLogo from "./assets/typescript_logo.webp";
+import MongoLogo from "./assets/mongo_logo.webp";
+import SocketIoLogo from "./assets/socketio_logo.webp";
 
 export default function Home() {
   return (
     <>
-      <nav className="flex items-center bg-gray-900 p-2 sm:p-4 md:p-4 lg:p-4 xl:p-6">
+      <nav className="flex items-center bg-neutral-900 p-2 sm:p-4 md:p-4 lg:p-4 xl:p-6">
         <div className="flex items-center flex-shrink-0 mr-6 text-white">
           <span className="font-semibold text-xl tracking-tight">About Me</span>
         </div>
@@ -16,7 +31,7 @@ export default function Home() {
           <Image
             className="rounded-full max-w-72 w-full light:hidden"
             src={image}
-            alt="Picture of the author"
+            alt="Max Locke"
             width={200}
             height={200}
           />
@@ -31,7 +46,7 @@ export default function Home() {
               </h2>
             </Link>
             <p className="text-2xl mt-4">
-              14 year old full-stack developer from Bellevue, WA
+              15 year old full-stack developer from Bellevue, WA
             </p>
           </div>
           <div className="mt-4 flex flex-wrap items-center">
@@ -81,15 +96,16 @@ export default function Home() {
           </div>
         </div>
         <div className="sm:w-3/4  p-4 md:p-6 sm:inline-block box-border">
-          <h2 className="text-5xl font-bold mt-4 text-gray-600">About Me</h2>
+          <h2 className="text-5xl font-bold mt-4 text-neutral-600">About Me</h2>
           <p className="text-xl mt-4">
-            Hello, I&apos;m Max Locke, the creator of Subatomic.js, a fullstack
-            framework for building web apps. As a 14-year-old fullstack
-            developer and{" "}
+            Hello, I&apos;m Max Locke from{" "}
+            <span className="text-red-700">Newport HS</span>, the creator of
+            Subatomic.js, a fullstack framework for building web apps. As a
+            15-year-old fullstack developer and{" "}
             <Link
               href="https://youtube.com/@CodeSymph"
               target="_blank"
-              className="text-gray-600 font-bold"
+              className="text-neutral-600 font-bold"
             >
               YouTuber
             </Link>{" "}
@@ -98,82 +114,55 @@ export default function Home() {
             learning and am always looking to expand my skill-set.
           </p>
 
-          <div className="flex flex-col items-center content-center px-4 md:px-6 lg:px-8 py-10 lg:py-12">
+          <div
+            className="flex flex-col items-center content-center px-4 md:px-6 lg:px-8 "
+            style={{
+              paddingTop: "clamp(4rem, 7vh, 10rem)",
+              paddingBottom: "clamp(4rem, 7vh, 10rem)",
+            }}
+          >
             <blockquote
               className="text-2xl md:text-3xl quote relative"
               style={{
-                "font-style": "italic",
+                fontStyle: "italic",
               }}
             >
               If you think you&apos;re done learning how to code, you&apos;re
               doing something wrong.
             </blockquote>
-            <cite className="w-full mt-4 text-xl">- Max Locke</cite>
+            <cite className="w-full mt-8 text-xl">- Max Locke</cite>
           </div>
-          <h1 className="text-5xl font-bold mt-0 text-gray-600">Skills</h1>
+          <h1 className="text-5xl font-bold mt-0 text-neutral-600">Skills</h1>
           <p className="text-xl mt-4">
             I&apos;m skilled in many areas of web development and programming,
             including:
           </p>
           <div className="flex flex-row gap-4 py-8 overflow-x-auto whitespace-nowrap h-40 py-4">
+            <Logo src={HtmlLogo} alt="HTML5 Logo" />
+            <Logo src={CssLogo} alt="CSS3 Logo" />
+            <Logo src={JsLogo} alt="JavaScript Logo" />
+            <Logo src={ReactLogo} alt="React.js Logo" />
+            <Logo src={NodeLogo} alt="Node.js Logo" />
+            <Logo src={ExpressLogo} alt="Express.js Logo" />
+            <Logo src={MongoLogo} alt={"MongoDB Logo"} />
+            <Logo src={PythonLogo} alt="Python Logo" />
             <Logo
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/800px-HTML5_Badge.svg.png"
-              alt="HTML5 Logo"
-            />
-            <Logo
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/1024px-CSS3_logo.svg.png"
-              alt="CSS3 Logo"
-            />
-            <Logo
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/480px-JavaScript-logo.png"
-              alt="JavaScript Logo"
-            />
-            <Logo
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1280px-React-icon.svg.png"
-              alt="React Logo"
-            />
-            <Logo
-              src="https://seeklogo.com/images/N/nodejs-logo-FBE122E377-seeklogo.com.png"
-              alt="Node.js Logo"
-            />
-            <Logo
-              src="https://cdn.buttercms.com/8am8PZECScDawQa33Lv2"
-              alt="Express.js Logo"
-            />
-            <Logo
-              src="https://cdn.iconscout.com/icon/free/png-256/free-mongodb-5-1175140.png"
-              alt="MongoDB Logo"
-            />
-            <Logo
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1869px-Python-logo-notext.svg.png"
-              alt="Python Logo"
-            />
-            <Logo
-              src="https://www.datocms-assets.com/75941/1657707878-nextjs_logo.png"
+              src={NextDarkLogo}
               alt="Next.js Logo"
+              className="hidden dark:block"
             />
             <Logo
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/512px-Typescript_logo_2020.svg.png?20221110153201"
-              alt="TypeScript Logo"
+              src={NextLightLogo}
+              alt="Next.js Logo"
+              className="dark:hidden"
             />
-            <Logo
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Socket-io.svg/2048px-Socket-io.svg.png"
-              alt="Socket.io Logo"
-            />
-            <Logo
-              src="https://cdn.icon-icons.com/icons2/2699/PNG/512/tailwindcss_logo_icon_167923.png"
-              alt="Tailwind CSS Logo"
-            />
-            <Logo
-              src="https://www.shareicon.net/data/512x512/2016/09/23/833700_windows_512x512.png"
-              alt="Java Logo"
-            />
-            <Logo
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/800px-ISO_C%2B%2B_Logo.svg.png"
-              alt="C++ Logo"
-            />
+            <Logo src={TypeScriptLogo} alt={"TypeScript Logo"} />
+            <Logo src={SocketIoLogo} alt="Socket.io Logo" />
+            <Logo src={TailwindLogo} alt="Tailwind CSS Logo" />
+            <Logo src={JavaLogo} alt="Java Logo" />
+            <Logo src={CppLogo} alt="C++ Logo" />
           </div>
-          <h2 className="text-5xl font-bold mt-8 text-gray-600">Projects</h2>
+          <h2 className="text-5xl font-bold mt-8 text-neutral-600">Projects</h2>
           <p className="text-xl mt-4 mb-8">
             I&apos;ve worked on various projects, and here are some of my
             favorites:
@@ -186,13 +175,13 @@ export default function Home() {
             Subatomic.js began as an abstract idea for a fullstack SSR
             framework. Initially, I developed a frontend-only version using
             template literals for component definition. As the project
-            progressed, I added features such as PSR, SSR, JSX, and optional
-            TypeScript, turning it into a cutting-edge and feature-rich
+            progressed, I added features such as Pre-Rendering, SSR, JSX, and
+            optional TypeScript, turning it into a cutting-edge and feature-rich
             lightweight framework. While still in development, you can explore
             its evolution on{" "}
             <a
               href="https://github.com/TheLazyCodernothacker/Subatomic"
-              className="text-gray-600 hover:text-gray-700 visited:text-gray-400 font-bold"
+              className="text-neutral-600 hover:text-neutral-700 visited:text-neutral-400 font-bold"
             >
               GitHub
             </a>
@@ -202,11 +191,12 @@ export default function Home() {
             tutorial at{" "}
             <Link
               href="https://subatomic.js.org"
-              className="text-gray-600 hover:text-gray-700 visited:text-gray-400 font-bold"
+              className="text-neutral-600 hover:text-neutral-700 visited:text-neutral-400 font-bold"
             >
               subatomic.js.org
             </Link>
-            .
+            . There was a great satisfaction seeing it be added to js.org and I
+            felt engraved in the community.
           </p>
           <iframe
             src="https://subatomic.js.org"
@@ -224,7 +214,7 @@ export default function Home() {
             Coducation is a collaborative website that I created with{" "}
             <a
               href="https://github.com/Pineappletwo1"
-              className="text-gray-600 hover:text-gray-700 visited:text-gray-400 font-bold"
+              className="text-neutral-600 hover:text-neutral-700 visited:text-neutral-400 font-bold"
               target="_blank"
             >
               William Liang
@@ -239,7 +229,7 @@ export default function Home() {
             performance and SEO. You can no longer visit the website at{" "}
             <a
               href="http://home.coducation.tech"
-              className="text-gray-600 hover:text-gray-700 visited:text-gray-400 font-bold"
+              className="text-neutral-600 hover:text-neutral-700 visited:text-neutral-400 font-bold"
               target="_blank"
             >
               home.coducation.tech
@@ -249,7 +239,7 @@ export default function Home() {
             <Link
               href="
               https://github.com/TheLazyCodernothacker/Coducation"
-              className="text-gray-600 hover:text-gray-700 visited:text-gray-400 font-bold"
+              className="text-neutral-600 hover:text-neutral-700 visited:text-neutral-400 font-bold"
               target="_blank"
             >
               here
@@ -267,7 +257,7 @@ export default function Home() {
             Tyee Guides is a website that I created with{" "}
             <a
               href="https://github.com/Pineappletwo1"
-              className="text-gray-600 hover:text-gray-700 visited:text-gray-400 font-bold"
+              className="text-neutral-600 hover:text-neutral-700 visited:text-neutral-400 font-bold"
               target="_blank"
             >
               William Liang
@@ -279,16 +269,16 @@ export default function Home() {
             can rate classes on certain criteria, and other features we never
             finished such as a newspaper. You can visit the site at{" "}
             <a
-              href="https://guides.tyeems.me"
-              className="text-gray-600 hover:text-gray-700 visited:text-gray-400 font-bold"
+              href="https://tyee-guides.vercel.app/"
+              className="text-neutral-600 hover:text-neutral-700 visited:text-neutral-400 font-bold"
               target="_blank"
             >
-              guides.tyeems.me
+              tyee-guides.vercel.app
             </a>
             .
           </p>
           <iframe
-            src="https://guides.tyeems.me"
+            src="https://tyee-guides.vercel.app/"
             className="w-full bg-white my-6 "
             style={{ aspectRatio: "2/1" }}
           ></iframe>
@@ -303,7 +293,7 @@ export default function Home() {
             <Link
               href="https://tyee2024.devpost.com/participants"
               target="_blank"
-              className="text-gray-600 hover:text-gray-700 visited:text-gray-400"
+              className="text-neutral-600 hover:text-neutral-700 visited:text-neutral-400"
             >
               Middle School Hackathon
             </Link>
@@ -311,7 +301,7 @@ export default function Home() {
             with{" "}
             <a
               href="https://github.com/Pineappletwo1"
-              className="text-gray-600 hover:text-gray-700 visited:text-gray-400 font-bold"
+              className="text-neutral-600 hover:text-neutral-700 visited:text-neutral-400 font-bold"
               target="_blank"
             >
               William Liang
@@ -322,16 +312,16 @@ export default function Home() {
             moderated by Google Gemini API to ensure safety. You can visit the
             site at{" "}
             <a
-              href="https://tyeecalendar.maxlocke.me"
-              className="text-gray-600 hover:text-gray-700 visited:text-gray-400 font-bold"
+              href="https://tyeecalendar.vercel.app/"
+              className="text-neutral-600 hover:text-neutral-700 visited:text-neutral-400 font-bold"
               target="_blank"
             >
-              tyeecalendar.maxlocke.me
+              tyeecalendar.vercel.app
             </a>
             .
           </p>
           <iframe
-            src="https://tyeecalendar.maxlocke.me"
+            src="https://tyeecalendar.vercel.app/"
             className="w-full bg-white my-6 "
             style={{ aspectRatio: "2/1" }}
           ></iframe>
@@ -343,10 +333,19 @@ export default function Home() {
             currently ranked third in the Tyee Programming Competition Club.
             I&apos;ve competed in the ACSL (American Computer Science League)
             While I only scored 20 points on the ACSL Junior 5 Finals, I look
-            forward to improving and studying more the next season.
+            forward to improving and studying more the next season. I also seem
+            to be quite allergic to USACO and haven't done a single problem yet.
+            I have done Leetcode tho, so you can check out my account{" "}
+            <a
+              href="https://leetcode.com/u/TheLazyCodernothacker/"
+              className="text-neutral-600 hover:text-neutral-700 visited:text-neutral-400 font-bold"
+              target="_blank"
+            >
+              here.
+            </a>
           </p>
 
-          <h2 className="text-5xl font-bold mt-4 text-gray-600">
+          <h2 className="text-5xl font-bold mt-4 text-neutral-600">
             YouTube Channel
           </h2>
           <p className="text-xl mt-4">
@@ -354,17 +353,21 @@ export default function Home() {
             YouTube channel{" "}
             <Link
               href="https://youtube.com/@CodeSymph"
-              className="text-gray-600 hover:text-gray-700 visited:text-gray-400 font-bold"
+              className="text-neutral-600 hover:text-neutral-700 visited:text-neutral-400 font-bold"
             >
               Code Symphony.
             </Link>
-            The channel is about programming and music and I dive into the
-            potentials of AI in many videos in series. This includes my series
-            of{" "}
+            The channel is about{" "}
+            <span className="text-blue-700">programming</span> and{" "}
+            <span className="text-green-600">
+              music and original compositions and arrangements
+            </span>{" "}
+            and I dive into the potentials of AI in many videos in series. This
+            includes my series of{" "}
             <Link
               href="https://www.youtube.com/watch?v=PeuNDJYVX-0&list=PLKS-_pqzLOm3z9f18w696J2pLhn60A1Iq"
               target="_blank"
-              className="text-gray-600 hover:text-gray-700 visited:text-gray-400 font-bold"
+              className="text-neutral-600 hover:text-neutral-700 visited:text-neutral-400 font-bold"
             >
               Learning Java from ChatGPT
             </Link>{" "}
@@ -372,12 +375,21 @@ export default function Home() {
             <Link
               href="https://www.youtube.com/watch?v=v6k2vfOR208&list=PLKS-_pqzLOm2Q-WFO5sg6uG1xGQ5X11IE&index=1"
               target="_blank"
-              className="text-gray-600 hover:text-gray-700 visited:text-gray-400 font-bold"
+              className="text-neutral-600 hover:text-neutral-700 visited:text-neutral-400 font-bold"
             >
               Learning C++ from ChatGPT
             </Link>
-            .
+            . I also sometimes post videos about my own experiences of
+            self-teaching and my most viewed video is about another coding
+            YouTube Video and taking a dive into it.
           </p>
+          <iframe
+            src="https://www.youtube.com/embed/PeuNDJYVX-0?si=Q3jQcfyTjwrW-Lzw"
+            title="YouTube video player"
+            style={{ aspectRatio: "2/1" }}
+            className="w-full bg-white my-6"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          ></iframe>
           <iframe
             src="https://www.youtube.com/embed/434BJGn7lSk?si=-zE1lxc1ffxNiOtN"
             title="YouTube video player"
@@ -385,7 +397,41 @@ export default function Home() {
             className="w-full bg-white my-6"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           ></iframe>
-          <h2 className="text-5xl font-bold mt-8 text-gray-600">Interests</h2>
+          <iframe
+            src="https://www.youtube.com/embed/Nqjy2GPcyls?si=9amE4psVWZkNQoyS"
+            title="YouTube video player"
+            style={{ aspectRatio: "2/1" }}
+            className="w-full bg-white my-6"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          ></iframe>
+          <iframe
+            src="https://www.youtube.com/embed/dRVpISkb7lE?si=Vf71SLmRFcL-S9Ec"
+            title="YouTube video player"
+            style={{ aspectRatio: "2/1" }}
+            className="w-full bg-white my-6"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          ></iframe>
+          <h2 className="text-5xl font-bold mt-4 text-neutral-600">
+            Running and Cross Country
+          </h2>
+          <p className="text-xl mt-4">
+            I started running when I was in 7th grade as my older brother was
+            already a Track and Cross Country runner and I slowly got hooked. It
+            seems like a critical balance of possibly staying home all day and
+            getting out and running. Sometimes I just run hoping it will clear
+            my head, start the run doubting it will, and by the end forgetting
+            what I was even worrying about. You can view my HS profile{" "}
+            <a
+              href="https://www.athletic.net/athlete/26480464/cross-country/high-school"
+              className="text-neutral-600 hover:text-neutral-700 visited:text-neutral-400 font-bold"
+              target="_blank"
+            >
+              here.
+            </a>
+          </p>
+          <h2 className="text-5xl font-bold mt-8 text-neutral-600">
+            Interests
+          </h2>
           <p className="text-xl mt-4">
             I&apos;m interested in many things, including:
           </p>
@@ -393,17 +439,18 @@ export default function Home() {
             <li>Web Development</li>
             <li>Competitive Programming</li>
             <li>Computer Science</li>
-            <li>Mathematics</li>
-            <li>Music theory/composition</li>
+            <li>Speedrunning / Retro Games</li>
+            <li>Mariokart and Mario in general</li>
+            <li>Music theory / composition</li>
             <li>NFL #gohawks</li>
           </ul>
-          <h2 className="text-5xl font-bold mt-8 text-gray-600">Contact</h2>
+          <h2 className="text-5xl font-bold mt-8 text-neutral-600">Contact</h2>
           <p className="text-xl mt-4">
             Feel free to email me at{" "}
             <a
               href="mailto:lockemaximus@gmail.com
               "
-              className="text-gray-600 hover:text-gray-700 visited:text-gray-400 font-bold"
+              className="text-neutral-600 hover:text-neutral-700 visited:text-neutral-400 font-bold"
             >
               lockemaximus@gmail.com
             </a>{" "}
@@ -411,18 +458,18 @@ export default function Home() {
           </p>
         </div>
       </main>
-      <footer className="text-center p-4 md:p-6 lg:p-8 bg-gray-900 text-white text-sm">
+      <footer className="text-center p-4 md:p-6 lg:p-8 bg-neutral-900 text-white text-sm">
         &copy; 2024 Max Locke | All Rights Reserved
       </footer>
     </>
   );
 }
 
-function Logo({ src, alt }) {
+function Logo({ src, alt, className }) {
   return (
     <div className="flex-none mr-4">
       <Image
-        className="h-24 w-auto"
+        className={"h-24 w-auto" + " " + className && className}
         src={src}
         alt={alt}
         width={100}
