@@ -334,7 +334,7 @@ export default function Home() {
             I&apos;ve competed in the ACSL (American Computer Science League)
             While I only scored 20 points on the ACSL Junior 5 Finals, I look
             forward to improving and studying more the next season. I also seem
-            to be quite allergic to USACO and haven't done a single problem yet.
+            to be quite allergic to USACO and haven&apos;t done a single problem yet.
             I have done Leetcode tho, so you can check out my account{" "}
             <a
               href="https://leetcode.com/u/TheLazyCodernothacker/"
