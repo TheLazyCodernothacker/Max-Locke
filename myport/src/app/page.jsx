@@ -98,7 +98,7 @@ export default function Home() {
         <div className="sm:w-3/4  p-4 md:p-6 sm:inline-block box-border">
           <h2 className="text-5xl font-bold mt-4 text-neutral-600">About Me</h2>
           <p className="text-xl mt-4">
-            Hello, I&apos;m Max Locke from{" "}
+            Hello, I&apos;m Max Locke, a 10th grader at{" "}
             <span className="text-red-700">Newport HS</span>, the creator of
             Subatomic.js, a fullstack framework for building web apps. As a
             15-year-old fullstack developer and{" "}
@@ -113,7 +113,6 @@ export default function Home() {
             along with music theory/composition. I&apos;m passionate about
             learning and am always looking to expand my skill-set.
           </p>
-
           <div
             className="flex flex-col items-center content-center px-4 md:px-6 lg:px-8 "
             style={{
@@ -171,6 +170,7 @@ export default function Home() {
             Subatomic.js,{" "}
             <span className=" text-2xl font-normal italic">JS Framework</span>
           </h3>
+          <h4 className="text-neutral-500 text-md">Dec 2023 - Feb 2024</h4>
           <p className="text-xl mt-4">
             Subatomic.js began as an abstract idea for a fullstack SSR
             framework. Initially, I developed a frontend-only version using
@@ -203,13 +203,104 @@ export default function Home() {
             className="w-full bg-white my-6 "
             style={{ aspectRatio: "2/1" }}
           ></iframe>
+          <h3 className="text-3xl font-bold mt-4 ">YouTube Channel</h3>
+          <h4 className="text-neutral-500 text-md">Sep 2022 - Present</h4>
 
+          <p className="text-xl mt-4">
+            I am the creator, runner, filmer, editor, and everything else of the
+            YouTube channel{" "}
+            <Link
+              href="https://youtube.com/@CodeSymph"
+              className="text-neutral-600 hover:text-neutral-700 visited:text-neutral-400 font-bold"
+            >
+              Code Symphony
+            </Link>{" "}
+            which has reached{" "}
+            <span className="text-green-600">930 subscribers</span>. The channel
+            is about <span className="text-blue-700">programming</span> and{" "}
+            <span className="text-green-600">
+              music and original compositions and arrangements
+            </span>{" "}
+            and I dive into the potentials of AI in many videos in series. This
+            includes my series of{" "}
+            <Link
+              href="https://www.youtube.com/watch?v=PeuNDJYVX-0&list=PLKS-_pqzLOm3z9f18w696J2pLhn60A1Iq"
+              target="_blank"
+              className="text-neutral-600 hover:text-neutral-700 visited:text-neutral-400 font-bold"
+            >
+              Learning Java from ChatGPT
+            </Link>{" "}
+            and{" "}
+            <Link
+              href="https://www.youtube.com/watch?v=v6k2vfOR208&list=PLKS-_pqzLOm2Q-WFO5sg6uG1xGQ5X11IE&index=1"
+              target="_blank"
+              className="text-neutral-600 hover:text-neutral-700 visited:text-neutral-400 font-bold"
+            >
+              Learning C++ from ChatGPT
+            </Link>
+            . I also sometimes post videos about my own experiences of
+            self-teaching and my most viewed video is about another coding
+            YouTube Video and taking a dive into it.
+          </p>
+          <iframe
+            src="https://www.youtube.com/embed/PeuNDJYVX-0?si=Q3jQcfyTjwrW-Lzw"
+            title="YouTube video player"
+            style={{ aspectRatio: "2/1" }}
+            className="w-full bg-white my-6"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          ></iframe>
+          <iframe
+            src="https://www.youtube.com/embed/Nqjy2GPcyls?si=9amE4psVWZkNQoyS"
+            title="YouTube video player"
+            style={{ aspectRatio: "2/1" }}
+            className="w-full bg-white my-6"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          ></iframe>
+          <iframe
+            src="https://www.youtube.com/embed/dRVpISkb7lE?si=Vf71SLmRFcL-S9Ec"
+            title="YouTube video player"
+            style={{ aspectRatio: "2/1" }}
+            className="w-full bg-white my-6"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          ></iframe>
+          <h3 className="text-3xl mt-4">AI Video Maker</h3>
+          <h4 className="text-neutral-500 text-md">Oct 2024 - Jun 2025</h4>
+
+          <p className="text-xl mt-4">
+            After discovering Remotion.js, a tool that allowed developers to
+            create videos through coding them, I was curious if AI was capable
+            of writing coding to make its own videos. I wanted to make a tool
+            that would make the process of going back and forth asking ChatGPT
+            for code a lot easier. This tool allows you to enter a video prompt,
+            and then the AI generates video sections. From the there the user
+            can prompt the AI to generate each section and give feedback.
+            It&apos;s a useful frontend and has a lot of prompt-engineering
+            going behind the scenes making it a smooth process. The code can be
+            found{" "}
+            <Link
+              href="
+              https://github.com/TheLazyCodernothacker/Remotion-AI-Video-Maker"
+              className="text-neutral-600 hover:text-neutral-700 visited:text-neutral-400 font-bold"
+              target="_blank"
+            >
+              here.
+            </Link>
+          </p>
+          <iframe
+            src="https://www.youtube.com/embed/hmMABTXm-I0?si=iHuLcRRFcir7p0-j"
+            title="YouTube video player"
+            style={{ aspectRatio: "2/1" }}
+            className="w-full bg-white my-6"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          ></iframe>
           <h3 className="text-3xl  mt-4">
             Coducation,{" "}
             <span className=" text-2xl font-normal italic">
               Learning Platform
             </span>
           </h3>
+          <h4 className="text-neutral-500 text-md">Apr 2023 - Sep 2023</h4>
+
           <p className="text-xl mt-4">
             Coducation is a collaborative website that I created with{" "}
             <a
@@ -246,13 +337,15 @@ export default function Home() {
             </Link>
             .
           </p>
-
           <h3 className="text-3xl mt-4">
             Tyee Guides,{" "}
             <span className=" text-2xl font-normal italic">
               Community Portal
             </span>
           </h3>
+
+          <h4 className="text-neutral-500 text-md">Nov 2023 - month project</h4>
+
           <p className="text-xl mt-4">
             Tyee Guides is a website that I created with{" "}
             <a
@@ -288,6 +381,10 @@ export default function Home() {
               Community Calendar
             </span>
           </h3>
+          <h4 className="text-neutral-500 text-md">
+            Apr 2024 - 5day Hackathon
+          </h4>
+
           <p className="text-xl mt-4">
             For the{" "}
             <Link
@@ -321,21 +418,25 @@ export default function Home() {
             .
           </p>
           <iframe
-            src="https://tyeecalendar.vercel.app/"
-            className="w-full bg-white my-6 "
+            src=" https://www.youtube.com/embed/qXSjhaK-NjM?si=ObVqofJMhIUskMiz"
+            title="YouTube video player"
             style={{ aspectRatio: "2/1" }}
+            className="w-full bg-white my-6"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           ></iframe>
+
           <h3 className="text-3xl font-semibold mt-4">
             Competitive Programming
           </h3>
+          <h4 className="text-neutral-500 text-md">Sep 2023 - Present</h4>
           <p className="text-xl mt-4">
-            I just recently started competitive programming, and I&apos;m
-            currently ranked third in the Tyee Programming Competition Club.
-            I&apos;ve competed in the ACSL (American Computer Science League)
-            While I only scored 20 points on the ACSL Junior 5 Finals, I look
-            forward to improving and studying more the next season. I also seem
-            to be quite allergic to USACO and haven&apos;t done a single problem yet.
-            I have done Leetcode tho, so you can check out my account{" "}
+            In 8th grade, I started competitive programming, and was ranked
+            third in the Tyee Programming Competition Club. I&apos;ve competed
+            in the ACSL (American Computer Science League) While I only scored
+            20 points on the ACSL Junior 5 Finals, I look forward to improving
+            and studying more the next season. I also seem to be quite allergic
+            to USACO and haven&apos;t done a single problem yet. I have done
+            Leetcode tho, so you can check out my account{" "}
             <a
               href="https://leetcode.com/u/TheLazyCodernothacker/"
               className="text-neutral-600 hover:text-neutral-700 visited:text-neutral-400 font-bold"
@@ -344,76 +445,10 @@ export default function Home() {
               here.
             </a>
           </p>
-
-          <h2 className="text-5xl font-bold mt-4 text-neutral-600">
-            YouTube Channel
-          </h2>
-          <p className="text-xl mt-4">
-            I am the creator, runner, filmer, editor, and everything else of the
-            YouTube channel{" "}
-            <Link
-              href="https://youtube.com/@CodeSymph"
-              className="text-neutral-600 hover:text-neutral-700 visited:text-neutral-400 font-bold"
-            >
-              Code Symphony.
-            </Link>
-            The channel is about{" "}
-            <span className="text-blue-700">programming</span> and{" "}
-            <span className="text-green-600">
-              music and original compositions and arrangements
-            </span>{" "}
-            and I dive into the potentials of AI in many videos in series. This
-            includes my series of{" "}
-            <Link
-              href="https://www.youtube.com/watch?v=PeuNDJYVX-0&list=PLKS-_pqzLOm3z9f18w696J2pLhn60A1Iq"
-              target="_blank"
-              className="text-neutral-600 hover:text-neutral-700 visited:text-neutral-400 font-bold"
-            >
-              Learning Java from ChatGPT
-            </Link>{" "}
-            and{" "}
-            <Link
-              href="https://www.youtube.com/watch?v=v6k2vfOR208&list=PLKS-_pqzLOm2Q-WFO5sg6uG1xGQ5X11IE&index=1"
-              target="_blank"
-              className="text-neutral-600 hover:text-neutral-700 visited:text-neutral-400 font-bold"
-            >
-              Learning C++ from ChatGPT
-            </Link>
-            . I also sometimes post videos about my own experiences of
-            self-teaching and my most viewed video is about another coding
-            YouTube Video and taking a dive into it.
-          </p>
-          <iframe
-            src="https://www.youtube.com/embed/PeuNDJYVX-0?si=Q3jQcfyTjwrW-Lzw"
-            title="YouTube video player"
-            style={{ aspectRatio: "2/1" }}
-            className="w-full bg-white my-6"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          ></iframe>
-          <iframe
-            src="https://www.youtube.com/embed/434BJGn7lSk?si=-zE1lxc1ffxNiOtN"
-            title="YouTube video player"
-            style={{ aspectRatio: "2/1" }}
-            className="w-full bg-white my-6"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          ></iframe>
-          <iframe
-            src="https://www.youtube.com/embed/Nqjy2GPcyls?si=9amE4psVWZkNQoyS"
-            title="YouTube video player"
-            style={{ aspectRatio: "2/1" }}
-            className="w-full bg-white my-6"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          ></iframe>
-          <iframe
-            src="https://www.youtube.com/embed/dRVpISkb7lE?si=Vf71SLmRFcL-S9Ec"
-            title="YouTube video player"
-            style={{ aspectRatio: "2/1" }}
-            className="w-full bg-white my-6"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          ></iframe>
           <h2 className="text-5xl font-bold mt-4 text-neutral-600">
             Running and Cross Country
           </h2>
+          <h4 className="text-neutral-500 text-md">Apr 2023 - Present</h4>
           <p className="text-xl mt-4">
             I started running when I was in 7th grade as my older brother was
             already a Track and Cross Country runner and I slowly got hooked. It
@@ -459,7 +494,7 @@ export default function Home() {
         </div>
       </main>
       <footer className="text-center p-4 md:p-6 lg:p-8 bg-neutral-900 text-white text-sm">
-        &copy; 2024 Max Locke | All Rights Reserved
+        &copy; 2025 Max Locke | All Rights Reserved
       </footer>
     </>
   );
