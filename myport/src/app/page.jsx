@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import image from "./test.png";
+import image from "./test.jpg";
 import GHLogo from "./25231.png";
 import CppLogo from "./assets/cpp_logo.webp";
 import JavaLogo from "./assets/java_logo.webp";
