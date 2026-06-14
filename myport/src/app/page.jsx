@@ -98,10 +98,10 @@ export default function Home() {
         <div className="sm:w-3/4  p-4 md:p-6 sm:inline-block box-border">
           <h2 className="text-5xl font-bold mt-4 text-neutral-600">About Me</h2>
           <p className="text-xl mt-4">
-            Hello, I&apos;m Max Locke, a 10th grader at{" "}
+            Hello, I&apos;m Max Locke, an 11th grader at{" "}
             <span className="text-red-700">Newport HS</span>, the creator of
             Subatomic.js, a fullstack framework for building web apps. As a
-            15-year-old fullstack developer and{" "}
+            16-year-old fullstack developer and{" "}
             <Link
               href="https://youtube.com/@CodeSymph"
               target="_blank"
