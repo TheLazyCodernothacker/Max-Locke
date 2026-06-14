@@ -46,7 +46,7 @@ export default function Home() {
               </h2>
             </Link>
             <p className="text-2xl mt-4">
-              15 year old full-stack developer from Bellevue, WA
+              16 year old full-stack developer from Bellevue, WA
             </p>
           </div>
           <div className="mt-4 flex flex-wrap items-center">
